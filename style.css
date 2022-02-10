@@ -1,0 +1,201 @@
+
+
+body {
+    width: 100vw; height: 100vh;
+    margin: 0; padding: 0;
+    overflow: hidden;
+    background: #f1f0fa; color: #171424;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 18px; font-weight: 600px;
+}
+
+h2 {
+    font-size: 14px; font-weight: 600px;
+}
+
+h3 {
+    font-size: 12px; font-weight: 600px;
+}
+
+p {
+    font-size: 12px; font-weight: 500;
+}
+
+#sidebar {
+    width: 25%; height: 100%;
+    margin: 0; padding: 32px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 5px 5px 20px rgba(86, 82, 110, 0.1);
+}
+
+#paperclip-num {
+    font-size: 28px; font-weight: 700;
+    color: #5a40dd;
+}
+
+#make-paperclip-btn {
+    width: 56px; height: 56px;
+    margin-top: 6%; margin-left: 50%; transform: translateX(-50%);
+    font-size: 28px; font-weight: 700;
+    background: #5a40dd; color: #f1f0fa;
+    border: 2px solid rgba(90, 64, 221, 0); border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(90, 64, 221, 0.4);
+    cursor: pointer;
+}
+
+#make-paperclip-btn:hover {
+    background: #f1f0fa; color: #5a40dd;
+    border: 2px solid rgba(90, 64, 221, 1);
+}
+
+#make-paperclip-btn:active {
+    border: 2px solid #56526e; color: #56526e;
+    box-shadow: 2px 2px 8px rgba(90, 64, 221, 0.4);
+}
+
+#tab-select {
+    width: 100%; height: 40px;
+    margin-top: 16%;
+    border-radius: 20px;
+    display: flex; align-items: center; justify-content: center;
+    background: #f1f0fa;
+    box-shadow: 5px 5px 15px rgba(90, 64, 221, 0.2);
+}
+
+#tab-btn-cont {
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+    display: flex; justify-content: space-between;
+}
+
+.tab-btn {
+    font-size: 14px; font-weight: 600; font-family: inherit;
+    background: none; border: none;
+    width: 50%; margin: 0;
+    color: #171424;
+    cursor: pointer;
+}
+
+.selected-tab {
+    color: #f1f0fa;
+}
+
+#selected-tab-indicator {
+    transform: translateX(-50%);
+    width: 50%; height: 40px;
+    border-radius: 20px;
+    background-color: #5a40dd;
+    z-index: 0;
+}
+
+#projects-tab {
+    padding-top: 10%; box-sizing: border-box;
+    width: 100%; height: 66%;
+    overflow-x: hidden;
+}
+
+.project {
+    width: 100%; height: max-content;
+    font-family: inherit;
+    margin-bottom: 5%; padding: 2px 14px; box-sizing: border-box;
+    border-radius: 25px; border: 2px solid #b4b1c4;
+    background-color: #f1f0fa;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.project-title span {
+    font-weight: 500;
+}
+
+.project:hover {
+    border: 2px solid #5a40dd;
+}
+
+
+#main {
+    position: absolute;
+    top: 0; right: 0;
+    width: 75%; height: 100%;
+    padding: 2%; box-sizing: border-box;
+    display: inline-grid;
+    grid-template-columns: repeat(10, 1fr); grid-template-rows: repeat(8, 1fr);
+    column-gap: 2%; row-gap: 2%;
+}
+
+.component {
+    padding: 25px; box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px rgba(86, 82, 110, 0.1);
+    overflow: hidden;
+}
+
+.comp-large {
+    grid-column: span 5; grid-row: span 3;
+}
+
+.comp-reg {
+    grid-column: span 4; grid-row: span 3;
+}
+
+.comp-small {
+    grid-column: span 3; grid-row: span 3;
+}
+
+.comp-tiny {
+    grid-column: span 2; grid-row: span 3;
+}
+
+.component h2 {
+    margin: 0; margin-bottom: 5%;
+}
+
+.component span {
+    font-weight: 600;
+}
+
+#price-incrementer {
+    width: fit-content; height: 25px;
+    background: #f1f0fa;
+    border-radius: 10px; border: 1px solid #b4b1c4;
+    display: flex; align-items: center;
+    overflow: hidden;
+}
+
+#price-increment-header {
+    margin-top: 5%; margin-bottom: 2%;
+}
+
+#price-incrementer button {
+    background: none; border: none;
+    padding: 8px;
+    font-size: 16px; font-weight: 700; font-family: inherit;
+    cursor: pointer;
+}
+
+#price-incrementer span {
+    font-size: 12px; font-weight: 600;
+    padding: 6px;
+    border-right: 1px solid #b4b1c4; border-left: 1px solid #b4b1c4;
+}
+
+
+#upgrade-marketing-btn {
+    padding: 10px 15px; margin-top: 5%;
+    background: #f1f0fa; color: #171424;
+    font-size: 12px; font-weight: 700; font-family: inherit;
+    border: 2px solid #b4b1c4; border-radius: 15px;
+    cursor: pointer;
+}
+
+#upgrade-marketing-btn:hover {
+    border: 2px solid #5a40dd;
+}
+

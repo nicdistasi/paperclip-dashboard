@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paperclip Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Paperclips: <br><span id="paperclip-num">0</span></h2>
+        <button id="make-paperclip-btn">+</button>
+        <div id="tab-select">
+            <div id="tab-btn-cont">
+                <button id="projects-tab-btn" class="tab-btn selected-tab">Projects</button>
+                <button id="stats-tab-btn" class="tab-btn">Statistics</button>
+            </div>
+            <div id="selected-tab-indicator"></div>
+        </div>
+        <div id="projects-tab">
+            <button class="project">
+                <h3 class="project-title">Improved AutoClippers <span class="project-cost">(750 ops)</span></h3>
+                <p>Increases AutoClipper performance 25%</p>
+            </button>
+            <button class="project">
+                <h3 class="project-title">Improved Wire Extrusion <span class="project-cost">(1,750 ops)</span></h3>
+                <p>50% more wire supply from every spool</p>
+            </button>
+            <button class="project">
+                <h3 class="project-title">Limerick <span class="project-cost">(10 creat)</span></h3>
+                <p>Algorithmically-generated poem (+1 Trust)</p>
+            </button>
+        </div>
+    </div>
+    <div id="main">
+        <div id="business-component" class="component comp-small">
+            <h2>Business</h2>
+            <p>Available Funds: $<span id="funds-count">0.00</span></p>
+            <p>Avg. Rev. per sec: $<span>0.00</span></p>
+            <p>Avg. Clips Sold per sec: <span>0</span></p>
+            <p>Unsold inventory: <span>0</span></p>
+            <p>Public Demand: %<span>100</span></p>
+            <p id="price-increment-header">Price per Clip: <div id="price-incrementer">
+                <button>-</button><span>0.10</span><button>+</button>
+            </div></p>
+        </div>
+        <div id="marketing-component" class="component comp-tiny">
+            <h2>Marketing</h2>
+            <br>
+            <h1>Level: <span>1</span></h1>
+            <button id="upgrade-marketing-btn">Upgrade</button>
+            <p>Cost: $<span>100</span></p>
+        </div>
+        <div id="manufacturing-component" class="component comp-small">
+            <h2>Manufacturing</h2>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
